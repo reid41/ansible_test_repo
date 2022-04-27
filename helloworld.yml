@@ -1,0 +1,8 @@
+---
+- name: Hello World!
+  hosts: all
+
+  tasks:
+
+  - name: Hello World!
+    shell: touch /tmp/hello_world2; echo "hello" > /tmp/hello_world2
