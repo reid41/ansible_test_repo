@@ -5,7 +5,7 @@
   tasks:
 
   - name: Check the hostname and uptime 
-    shell: hostname;uptime
+    shell: hostname;subscription-manager status
     register: command_output
 
   - debug:
