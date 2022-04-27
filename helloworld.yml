@@ -4,5 +4,9 @@
 
   tasks:
 
-  - name: Hello World!
-    shell: touch /tmp/New_Job_2022-04-27; echo "New_Job_2022-04-27" > /tmp/New_Job_2022-04-27
+  - name: Check the hostname and uptime 
+    shell: hostname;update
+    register: command_output
+
+  - debug:
+          var: command_output.stdout_lines
